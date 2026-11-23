@@ -140,7 +140,10 @@ img, svg, video {
 .profile,
 .profile__name,
 .profile__handle,
-.footer {
+.footer,
+.sns,
+.sns__links,
+.sns__btn {
   max-width: 100%;
   min-width: 0;
   overflow-wrap: anywhere;
@@ -153,6 +156,52 @@ img, svg, video {
   line-height: 1.8;
   letter-spacing: 0.02em;
   text-align: center;
+}
+
+.sns {
+  margin: 24px 0 0;
+  min-width: 0;
+  width: 100%;
+}
+
+.sns__links {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 8px;
+  width: 100%;
+  min-width: 0;
+}
+
+.sns__btn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 52px;
+  min-width: 0;
+  width: 100%;
+  max-width: 100%;
+  padding: 10px 6px;
+  border-radius: 14px;
+  border: 2px solid var(--navy);
+  background: var(--navy);
+  color: #fff;
+  text-decoration: none;
+  text-align: center;
+  font-weight: 800;
+  font-size: 0.88rem;
+  letter-spacing: 0.02em;
+  box-sizing: border-box;
+  overflow-wrap: anywhere;
+}
+
+.sns__btn:hover {
+  background: var(--navy-soft);
+  border-color: var(--navy-soft);
+}
+
+.sns__btn:focus-visible {
+  outline: 3px solid var(--mint-deep);
+  outline-offset: 2px;
 }
 
 .section-title {
