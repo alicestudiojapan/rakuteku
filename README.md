@@ -2,17 +2,21 @@
 
 Instagram などのプロフィールに載せる、紹介リンクの一覧ページです。
 
-公開アドレス（予定）: https://alicestudiojapan.github.io/rakuteku-links/
+公開アドレス: https://alicestudiojapan.github.io/rakuteku/
 
 プログラムの知識は不要です。更新するときは、次の1つのファイルだけを編集します。
 
 - `links.json` … 商品名と、Amazon / 楽天 / A8 / もしものURL、公開状態
 
+編集画面（GitHub）: https://github.com/alicestudiojapan/rakuteku/edit/main/links.json
+
 ## リンクを更新する手順（3ステップ）
 
-1. GitHub でこのリポジトリの `links.json` を開き、鉛筆マーク（Edit this file）を押します。
+1. 上の編集画面を開き、`links.json` を直接直します（GitHubにログインした状態で開いてください）。
 2. 紹介したい商品の `"amazon"` や `"rakuten"`、`"a8"`、`"moshimo"` に、自分のアフィリエイトURLを貼ります。空欄（`""`）のままのボタンは、ページ上で「準備中」と表示されます。準備ができたら、同じ商品の `"status"` を `"準備中"` から `"公開"` に変えます。
 3. 「Commit changes」（変更をコミット）を押します。1〜3分でページに反映されます。
+
+商品の `"status"` がひとつでも `"準備中"` のあいだは、ページ上部に「ただいま準備中です。紹介した商品のリンクは順次追加します」と表示されます。すべて `"公開"` になると、この案内は消えます。
 
 ## 書き方の例
 

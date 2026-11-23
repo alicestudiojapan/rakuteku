@@ -68,6 +68,13 @@
     if (site.tagline) document.getElementById("site-tagline").textContent = site.tagline;
   }
 
+  function applyBanner(products) {
+    const banner = document.getElementById("preparing-banner");
+    if (!banner) return;
+    const stillPreparing = (products || []).some(function (p) { return !isPublic(p); });
+    banner.hidden = !stillPreparing;
+  }
+
   function applyFooter(data, products) {
     const footer = data.footer || {};
     const affiliate = document.getElementById("footer-affiliate");
@@ -89,6 +96,7 @@
     applySite(data);
     const products = Array.isArray(data.products) ? data.products : [];
     document.getElementById("products").innerHTML = products.map(renderProduct).join("");
+    applyBanner(products);
     applyFooter(data, products);
   }
 
@@ -100,7 +108,7 @@
     .then(render)
     .catch(function (err) {
       document.getElementById("products").innerHTML =
-        '<p class="section-note">リンク情報を表示できませんでした。時間をおいて、もう一度お試しください。</p>';
+        '<p class="section-title">リンク情報を表示できませんでした。時間をおいて、もう一度お試しください。</p>';
       console.error(err);
     });
 })();

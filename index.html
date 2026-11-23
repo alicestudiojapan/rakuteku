@@ -9,26 +9,29 @@
   <meta property="og:title" content="ラクテク暮らし">
   <meta property="og:description" content="一人暮らし・共働きの、収納と洗濯の時短。紹介リンクはプロフィールから。">
   <meta property="og:type" content="website">
+  <meta property="og:url" content="https://alicestudiojapan.github.io/rakuteku/">
   <meta property="og:image" content="assets/icon.png">
   <link rel="icon" type="image/png" sizes="32x32" href="assets/favicon.png">
   <link rel="apple-touch-icon" href="assets/icon-192.png">
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=M+PLUS+Rounded+1c:wght@400;500;700;800&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
   <div class="page">
     <header class="profile">
-      <img class="profile__icon" src="assets/icon.png" width="512" height="512" alt="ラクテク暮らしのアイコン。ミント色の背景に、時計付きの白い家と「ラクテク」の文字。">
+      <div class="profile__mark">
+        <img class="profile__icon" src="assets/icon.png" width="512" height="512" alt="ラクテク暮らしのアイコン。ミント色の背景に、時計付きの白い家と「ラクテク」の文字。">
+      </div>
       <h1 class="profile__name" id="site-name">ラクテク暮らし</h1>
       <p class="profile__handle" id="site-handle">@rakuteku_kurashi</p>
       <p class="profile__tagline" id="site-tagline">一人暮らし・共働きの、収納と洗濯の時短</p>
     </header>
 
+    <aside class="notice" id="preparing-banner">
+      <p class="notice__text">ただいま準備中です。紹介した商品のリンクは順次追加します</p>
+    </aside>
+
     <main>
       <h2 class="section-title">紹介しているもの</h2>
-      <p class="section-note">リンクの準備ができるまで、各ボタンは「準備中」と表示されます。</p>
       <div id="products" class="products"></div>
     </main>
 
