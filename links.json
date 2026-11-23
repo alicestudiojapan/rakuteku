@@ -1,0 +1,44 @@
+{
+  "site": {
+    "name": "ラクテク暮らし",
+    "handle": "@rakuteku_kurashi",
+    "tagline": "一人暮らし・共働きの、収納と洗濯の時短"
+  },
+  "footer": {
+    "pr_label": "PR",
+    "affiliate": "このページのリンクはアフィリエイト（成果報酬型広告）です。リンクを経由して商品を購入すると、紹介料を受け取ることがあります。",
+    "amazon_associate": "Amazonのアソシエイトとして、ラクテク暮らしは適格販売により収入を得ています。"
+  },
+  "products": [
+    {
+      "id": "yamazaki-plate-6534",
+      "title": "山崎実業 ポリ袋ホルダー プレート 6534",
+      "description": "調理中のごみを、手元に置ける折りたたみホルダー。",
+      "status": "準備中",
+      "amazon": "",
+      "rakuten": "",
+      "a8": "",
+      "moshimo": ""
+    },
+    {
+      "id": "yamazaki-magnet-stand-5138",
+      "title": "山崎実業 マグネットまな板スタンド 5138",
+      "description": "スチール面に付けて、まな板を作業台からどかすスタンド。",
+      "status": "準備中",
+      "amazon": "",
+      "rakuten": "",
+      "a8": "",
+      "moshimo": ""
+    },
+    {
+      "id": "utamaro-cleaner",
+      "title": "東邦 ウタマロクリーナー",
+      "description": "キッチンや水回りに使える中性スプレー。使える場所と使えない場所があります。",
+      "status": "準備中",
+      "amazon": "",
+      "rakuten": "",
+      "a8": "",
+      "moshimo": ""
+    }
+  ]
+}
