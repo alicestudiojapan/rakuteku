@@ -62,7 +62,7 @@
     const site = data.site || {};
     if (site.name) {
       document.getElementById("site-name").textContent = site.name;
-      document.title = site.name;
+      document.title = site.name + " リンク集";
     }
     if (site.handle) document.getElementById("site-handle").textContent = site.handle;
     if (site.tagline) document.getElementById("site-tagline").textContent = site.tagline;

@@ -32,6 +32,11 @@
 
 * { box-sizing: border-box; }
 
+html {
+  overflow-x: hidden;
+  max-width: 100%;
+}
+
 html, body {
   margin: 0;
   padding: 0;
@@ -50,12 +55,22 @@ html, body {
 body {
   min-height: 100vh;
   min-height: 100dvh;
+  overflow-x: hidden;
+  max-width: 100%;
+}
+
+img, svg, video {
+  max-width: 100%;
+  height: auto;
 }
 
 .page {
-  width: min(440px, calc(100% - 32px));
+  width: 100%;
+  max-width: 440px;
   margin: 0 auto;
-  padding: 40px 0 64px;
+  padding: 40px 16px 64px;
+  box-sizing: border-box;
+  min-width: 0;
 }
 
 .profile {
@@ -103,7 +118,7 @@ body {
   font-weight: 500;
   color: var(--muted);
   line-height: 1.85;
-  word-break: keep-all;
+  overflow-wrap: anywhere;
   line-break: strict;
 }
 
@@ -118,6 +133,17 @@ body {
 
 .notice[hidden] {
   display: none;
+}
+
+.notice,
+.notice__text,
+.profile,
+.profile__name,
+.profile__handle,
+.footer {
+  max-width: 100%;
+  min-width: 0;
+  overflow-wrap: anywhere;
 }
 
 .notice__text {
@@ -139,7 +165,10 @@ body {
 
 .products {
   display: grid;
+  grid-template-columns: minmax(0, 1fr);
   gap: 16px;
+  min-width: 0;
+  width: 100%;
 }
 
 .card {
@@ -148,6 +177,10 @@ body {
   padding: 22px 20px 18px;
   box-shadow: var(--shadow);
   border: 1px solid var(--line);
+  min-width: 0;
+  max-width: 100%;
+  width: 100%;
+  box-sizing: border-box;
 }
 
 .card__top {
@@ -164,6 +197,9 @@ body {
   line-height: 1.6;
   letter-spacing: 0.01em;
   line-break: strict;
+  overflow-wrap: anywhere;
+  min-width: 0;
+  max-width: 100%;
 }
 
 .card__desc {
@@ -173,7 +209,9 @@ body {
   font-weight: 500;
   line-height: 1.85;
   line-break: strict;
-  word-break: keep-all;
+  overflow-wrap: anywhere;
+  min-width: 0;
+  max-width: 100%;
 }
 
 .badge {
@@ -196,8 +234,10 @@ body {
 
 .stores {
   display: grid;
-  grid-template-columns: 1fr 1fr;
+  grid-template-columns: minmax(0, 1fr) minmax(0, 1fr);
   gap: 10px;
+  width: 100%;
+  min-width: 0;
 }
 
 .store {
@@ -205,7 +245,10 @@ body {
   align-items: center;
   justify-content: center;
   min-height: 52px;
-  padding: 10px 12px;
+  min-width: 0;
+  width: 100%;
+  max-width: 100%;
+  padding: 10px 8px;
   border-radius: 14px;
   text-decoration: none;
   font-weight: 800;
@@ -214,6 +257,8 @@ body {
   background: var(--navy);
   color: #fff;
   text-align: center;
+  box-sizing: border-box;
+  overflow-wrap: anywhere;
 }
 
 .store:hover {
@@ -304,14 +349,16 @@ body {
 
 @media (min-width: 720px) {
   .page {
-    width: min(460px, 100%);
+    max-width: 460px;
     padding-top: 56px;
     padding-bottom: 80px;
   }
 }
 
 @media (max-width: 360px) {
-  .page { width: calc(100% - 20px); }
+  .page { padding-left: 12px; padding-right: 12px; }
   .profile__name { font-size: 1.7rem; }
   .profile__icon { width: 132px; height: 132px; }
+  .profile__tagline { max-width: 12em; }
+  .card { padding: 18px 14px 16px; }
 }
