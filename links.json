@@ -11,6 +11,16 @@
   },
   "products": [
     {
+      "id": "tiger-pcv-a",
+      "title": "タイガー 蒸気レス電気ケトル PCV-A",
+      "description": "蒸気を本体の外に出さない電気ケトルです。",
+      "status": "公開",
+      "amazon": "",
+      "rakuten": "",
+      "a8": "https://px.a8.net/svt/ejp?a8mat=4BGS1A+C9RP6Q+4OAC+BW8O2&a8ejpredirect=https%3A%2F%2Fstore.tiger-corporation.com%2Fproducts%2Fpcv-a",
+      "moshimo": ""
+    },
+    {
       "id": "yamazaki-plate-6534",
       "title": "山崎実業 ポリ袋ホルダー プレート 6534",
       "description": "調理中のごみを、手元に置ける折りたたみホルダー。",

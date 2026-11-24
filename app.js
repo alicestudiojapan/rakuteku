@@ -2,7 +2,7 @@
   const STORE_KEYS = [
     { key: "amazon", name: "Amazon" },
     { key: "rakuten", name: "楽天" },
-    { key: "a8", name: "A8" },
+    { key: "a8", name: "公式ストア" },
     { key: "moshimo", name: "もしも" }
   ];
 
@@ -52,7 +52,9 @@
         "</div>" +
         '<p class="card__desc">' + escapeHtml(product.description || "") + "</p>" +
         '<div class="stores">' +
-          STORE_KEYS.map(function (store) { return storeButton(product, store); }).join("") +
+          STORE_KEYS.filter(function (store) {
+            return !live || filled(product[store.key]);
+          }).map(function (store) { return storeButton(product, store); }).join("") +
         "</div>" +
       "</article>"
     );
