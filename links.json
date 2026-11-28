@@ -11,6 +11,46 @@
   },
   "products": [
     {
+      "id": "shark-lc103j",
+      "title": "Shark EVOPOWER SYSTEM FIT コードレススティッククリーナー LC103J",
+      "description": "髪の毛が絡みにくいヘッドで、ワンタッチでハンディにもなるスティック掃除機です。",
+      "status": "公開",
+      "amazon": "",
+      "rakuten": "",
+      "a8": "https://px.a8.net/svt/ejp?a8mat=4BGS1A+CF4LMQ+4S6M+BW8O2&a8ejpredirect=https%3A%2F%2Fwww.sharkninja.jp%2Fproducts%2Flc103j",
+      "moshimo": ""
+    },
+    {
+      "id": "shark-cs100j",
+      "title": "Shark EVOPOWER SYSTEM STD コードレススティッククリーナー CS100J",
+      "description": "充電ドックに立てておけて、低い家具下にも届くスリムなスティック掃除機です。",
+      "status": "公開",
+      "amazon": "",
+      "rakuten": "",
+      "a8": "https://px.a8.net/svt/ejp?a8mat=4BGS1A+CF4LMQ+4S6M+BW8O2&a8ejpredirect=https%3A%2F%2Fwww.sharkninja.jp%2Fproducts%2Fcs100j",
+      "moshimo": ""
+    },
+    {
+      "id": "shark-wv251j",
+      "title": "Shark EVOPOWER W30 充電式ハンディクリーナー WV251J",
+      "description": "交換できるバッテリーが2個付いたハンディクリーナーです。",
+      "status": "公開",
+      "amazon": "",
+      "rakuten": "",
+      "a8": "https://px.a8.net/svt/ejp?a8mat=4BGS1A+CF4LMQ+4S6M+BW8O2&a8ejpredirect=https%3A%2F%2Fwww.sharkninja.jp%2Fproducts%2Fwv251j",
+      "moshimo": ""
+    },
+    {
+      "id": "roomba-mini-f155460",
+      "title": "Roomba Mini 掃除機＆床拭きロボット + AutoEmpty 充電ステーション",
+      "description": "一人暮らしの部屋にも置きやすい、小さなルンバです。",
+      "status": "公開",
+      "amazon": "",
+      "rakuten": "",
+      "a8": "https://px.a8.net/svt/ejp?a8mat=4BGS1A+CEJ60Y+4KHO+HUKPU&a8ejpredirect=https%3A%2F%2Fstore.irobot-jp.com%2Fitem%2FF155460.html",
+      "moshimo": ""
+    },
+    {
       "id": "shark-wv416j",
       "title": "Shark EVOPOWER EX 充電式ハンディクリーナー WV416J",
       "description": "充電台から片手で取れるハンディクリーナーです。",
